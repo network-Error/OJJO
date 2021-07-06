@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OJJO, ювелирные изделия">
+    <meta name="keywords" content="OJJO, кольца, серьги, подвески, запонки, браслеты, часы, свадьба, партнеру, мужу, жене, редкость, коллекция, ювелирные изделия">
+    <title>OJJO</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <!-- First-screen -->
+    <section class="first-screen">
+        <header class="header">
+            <div class="container container-flex">
+
+                <div id="menu-burger" class="burger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#openModal">Вход/Регистрация</a></li>
+                        <li><a class="menu__item" href="not-found.html">Поиск</a></li>
+                        <li><a class="menu__item" href="not-found.html">Контрагентам</a></li>
+                        <li><a class="menu__item" href="not-found.html">Дизайнерам</a></li>
+                        <li><a class="menu__item" href="not-found.html">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav">
+                    <li class="nav__item"><a href="not-found.html" class="nav__item nav__item_link" target="_blank">Контрагентам</a></li>
+                    <li class="nav__item"><a href="not-found.html" class="nav__item nav__item_link" target="_blank">Дизайнерам</a></li>
+                    <li class="nav__item"><a href="not-found.html" class="nav__item nav__item_link" target="_blank">Вакансии</a></li>
+                </ul>
+
+                <a href="#" class="nav-logo"><img src="img/first-screen/logo.svg" loading="lazy" alt="Logo"></a>
+
+                <ul class="nav">
+                    <li class="nav__item"><a href="#" class="nav__item nav__item_link nav__item_field"><span class="iconify icon-search" data-inline="false" data-icon="gridicons:search" style="color: #ffffff; font-size: 24px;"></span></a>
+                    <a href="#" class="nav__item nav__item_link nav__item_field">Поиск</a></li>
+                    <li class="nav__item"><a href="#openModal" class="nav__item nav__item_link nav__item_field">Вход/Регистрация</a></li>
+                    <li class="nav__item"><a href="#openModal" class="nav__item nav__item_link nav__item_field"><span class="iconify icon-user" data-inline="false" data-icon="mdi:account" style="color: #ffffff; font-size: 24px;"></span></a></li>
+                    <li class="nav__item"><a href="#" class="nav__item nav__item_link nav__item_field"><span class="iconify" data-inline="false" data-icon="topcoat:like" style="color: #ffffff; font-size: 18px;"></span></a></li>
+                </ul>
+            </div>
+
+            <h1>Долго, дорого, богато!</h1>
+            <a href="catalog.html" class="btn-link btn-link_catalog" target="_blank">каталог изделий</a>
+
+            <div class="brands">
+                <div class="container container-flex-light">
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                    <div class="brands__item">
+                        <img class="logo-brend__item" src="img/first-screen/brend.png" loading="lazy" alt="Brend">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section> <!-- /First-screen -->
+    <!-- Second-screen -->
+    <section class="second-screen">
+        <div class="container">
+            <p class="second-screen-head p-subheading">К мероприятиям</p>
+            <p class="second-screen-slog p-heading">Настоящая красота здесь!</p>
+
+            <div class="second-screen__btn" id="myBtnContainer">
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter active" onclick="filterSelection('wedding')">свадьба</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter" onclick="filterSelection('husband')">мужу</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter" onclick="filterSelection('wife')">жене</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter" onclick="filterSelection('partner')">партнеру</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter" onclick="filterSelection('collection')">коллекция</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn_filter" onclick="filterSelection('rerty')">редкость</button>
+                    <div class="btn_filter-wrapper"></div>
+                </div>
+            </div>
+
+            <div class="wrapper-cart second-screen__categories">
+                <a href="#" class="filterDiv wedding wife collection rerty second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img1.jpg" loading="lazy" alt="Ring">
+                        <figcaption class="figcaption-desc">Кольца</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="filterDiv wedding wife rerty second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img2.jpg" loading="lazy" alt="Earing">
+                        <figcaption class="figcaption-desc">Серьги</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="filterDiv wedding wife second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img3.jpg" loading="lazy" alt="Necklace">
+                        <figcaption class="figcaption-desc">Подвеска</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="filterDiv wedding husband rerty second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img4.jpg" loading="lazy" alt="Cufflinks">
+                        <figcaption class="figcaption-desc">Запонки</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="filterDiv wedding husband wife partner collection second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img5.jpg" loading="lazy" alt="Braceletes">
+                        <figcaption class="figcaption-desc">Браслеты</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="filterDiv wedding husband wife partner collection rerty second-screen__categories-item">
+                    <figure class="figure-wrapper">
+                        <img src="img/second-screen/img6.jpg" loading="lazy" alt="Clock">
+                        <figcaption class="figcaption-desc">Часы</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section> <!-- /Second-screen -->
+    <!-- Our-salon -->
+    <section class="our-salon">
+        <div class="container">
+            <p class="our-salon__subheading p-subheading">Не знаете, что выбрать?</p>
+            <p class="our-salon__heading p-heading">Посетите наши салоны в Москве</p>
+            <p class="our-salon__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.
+            </p>
+            <a href="#openSalon" class="btn-link btn-link_salon">Наши салоны</a>
+        </div>
+    </section> <!-- /Our-salon -->
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <p class="p-subheading">Полезные статьи</p>
+            <p class="p-heading margin-b">Лучшие советы по подбору дорогих подарков</p>
+            <div class="blog-wrapper">
+                <a href="#" class="blog__item" target="_blank">
+                    <figure class="blog-figure">
+                        <img src="img/blog/img-1.jpg" loading="lazy" alt="Как выбрать часы для своей будущей жены">
+                        <figcaption class="blog-figure-desc">Как выбрать часы для своей будущей жены</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="blog__item" target="_blank">
+                    <figure class="blog-figure">
+                        <img src="img/blog/img-2.jpg" loading="lazy" alt="Запонки для мужа: 7 ключевых правил покупки аксессуара">
+                        <figcaption class="blog-figure-desc">Запонки для мужа: 7 ключевых правил покупки аксессуара</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="blog__item" target="_blank">
+                    <figure class="blog-figure">
+                        <img src="img/blog/img-3.jpg" loading="lazy" alt="Как выбрать обручальные кольца молодоженам">
+                        <figcaption class="blog-figure-desc">Как выбрать обручальные кольца молодоженам</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <a href="#" class="btn-link btn-link_blog" target="_blank">читать наш блог</a>
+        </div>
+    </section> <!-- /Blog -->
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <p class="p-subheading">#ojjo_jewerly</p>
+            <p class="p-heading margin-b">Мы в социальных сетях</p>
+            <div class="gallery-wrapper">
+                <div class="gallery-wrapper__top">
+                    <a href="https://youtube.com" rel="noopener" target="_blank"><div class="gallery-wrapper__top gallery-wrapper__top_video">
+                        <img class="gallery-video-img" src="img/gallery/video-img-1.jpg" loading="lazy" alt="Play-video">
+                        <img class="gallery-video-button" src="img/gallery/button-play.svg" loading="lazy" alt="Play">
+                    </div></a>
+                    <img class="gallery-img" src="img/gallery/img-1.jpg" loading="lazy" alt="Img">
+                    <img class="gallery-img" src="img/gallery/img-2.jpg" loading="lazy" alt="Img">
+                </div>
+
+                <div class="gallery-wrapper__bottom">
+                    <img class="gallery-img" src="img/gallery/img-4.jpg" loading="lazy" alt="Img">
+                    <img class="gallery-img" src="img/gallery/img-3.jpg" loading="lazy" alt="Img">
+                    <a href="https://youtube.com" rel="noopener" target="_blank"><div class="gallery-wrapper__bottom gallery-wrapper__bottom_video">
+                        <img class="gallery-video-img" src="img/gallery/video-img-2.jpg" loading="lazy" alt="Play-video">
+                        <img class="gallery-video-button" src="img/gallery/button-play.svg" loading="lazy" alt="Play">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /Gallery -->
+    <!-- Subscribe -->
+    <section class="subscribe">
+        <div class="container">
+            <p class="p-subheading white-color">Полезные советы и персональный предложения</p>
+            <p class="p-heading white-color margin-b">Эксклюзивная рассылка</p>
+            <div class="subscribe__elements">
+                <div class="subscribe__list">
+                    <div class="subscribe__item">
+                        <img class="subscribe__icon" src="img/subscribe/icon.svg" loading="lazy" alt="Arrow">
+                        <p class="subscribe__text subscribe__text_white">Личный менеджер</p>
+                    </div>
+                    <div class="subscribe__item">
+                        <img class="subscribe__icon" src="img/subscribe/icon.svg" loading="lazy" alt="Arrow">
+                        <p class="subscribe__text subscribe__text_white">Доставка и оформление</p>
+                    </div>
+                    <div class="subscribe__item">
+                        <img class="subscribe__icon" src="img/subscribe/icon.svg" loading="lazy" alt="Arrow">
+                        <p class="subscribe__text subscribe__text_white">Индивидуальный дизайн</p>
+                    </div>
+                </div>
+                <form class="subscribe__form">
+                    <div class="subscribe-wrapper">
+                        <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
+                        <button class="btn-link subscribe__btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> <!-- /Subscribe -->
+    <!-- Footer --> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__column-link">
+                    <p class="p-footer-heading">Полезные ссылки</p>
+                    <div class="footer__column-link-wrapepr"><a href="#" class="link-footer base-footer-text">Доставка</a></div>
+                    <div class="footer__column-link-wrapepr"><a href="#" class="link-footer base-footer-text">Оплата</a></div>
+                    <div class="footer__column-link-wrapepr"><a href="#" class="link-footer base-footer-text">Акции</a></div>
+                    <div class="footer__column-link-wrapepr"><a href="#" class="link-footer base-footer-text">Политика конфиденциальности</a></div>
+                </div>
+                <div class="footer__column-pay">
+                    <p class="p-footer-heading">оплата</p>
+                    <p class="text-footer base-footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+                    <div class="icon-pay">
+                        <a href="#" class="pay-visa"><img src="img/footer/visa.png" loading="lazy" alt="Visa"></a>
+                        <a href="#" class="pay-master-card"><img src="img/footer/master-card.png" loading="lazy" alt="MasterCard"></a>
+                    </div>
+                </div>
+                <div class="footer__column-contacts">
+                    <p class="p-footer-heading">контакты</p>
+                    <a href="#" class="link-footer base-footer-text link-footer-contact"><span class="iconify" data-inline="false" data-icon="entypo:old-phone" style="color: #333333; font-size: 20px;"></span> 8 (812) 234-56-55</a>
+                    <a href="#" class="link-footer base-footer-text link-footer-contact"><span class="iconify" data-inline="false" data-icon="entypo:old-phone" style="color: #333333; font-size: 20px;"></span> 8 (812) 234-56-55</a>
+                    <a href="#" class="link-footer base-footer-text link-footer-contact"><span class="iconify" data-inline="false" data-icon="entypo:mail" style="color: #333333; font-size: 20px;"></span> ojjo@ojjo.ru</a>
+                </div> <!-- Сделать оболочку при наведении -->
+                <div class="footer__column-social">
+                    <p class="p-footer-heading">социальные сети</p>
+                    <p class="text-footer base-footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+                    <div class="social-icon">
+                        <a href="#" class="social-icon-youtube">
+                            <span class="iconify" data-inline="false" data-icon="carbon:logo-youtube" style="color: #333333; font-size: 26px;"></span>
+                        </a>
+                        <a href="#" class="social-icon-vk">
+                            <span class="iconify" data-inline="false" data-icon="entypo-social:vk" style="color: #333333; font-size: 24px;"></span>
+                        </a>
+                        <a href="#" class="social-icon-facebook">
+                            <span class="iconify" data-inline="false" data-icon="bx:bxl-facebook" style="color: #333333; font-size: 26px;"></span>
+                        </a>
+                        <a href="#" class="social-icon-telegram">
+                            <span class="iconify" data-inline="false" data-icon="bx:bxl-telegram" style="color: #333333; font-size: 24px;"></span>
+                        </a>
+                        <a href="#" class="social-icon-etsy">
+                            <span class="iconify" data-inline="false" data-icon="simple-icons:etsy" style="color: #333333; font-size: 16px;"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="base-footer-text copyright-margin">(c) 2020 OJJO jewelry</p>
+                <a href="#" class="link-footer base-footer-text copyright-margin">Договор публичной офферты</a>
+                <a href="#" class="link-footer base-footer-text copyright-margin">Контрагентам</a>
+                <a href="#" class="link-footer base-footer-text copyright-margin copyright-figma">Сделано Figma.info</a>
+            </div>
+        </div>
+    </footer> <!-- /Footer -->
+
+    <!-- Modal window -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Вход</h4>
+                    <a href="#close" title="Close" class="close"><img class="close-img" src="img/cancel.svg" alt="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <form class="form-modal">
+                        <input type="text" placeholder="Введите логин">
+                        <input type="password" placeholder="Введите Ваш пароль">
+                        <button type="submit">Вход</button>
+                        <a href="#registration" class="btn-reg">Регистрация</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Modal window -->
+
+    <!-- Registration window -->
+    <div id="registration" class="registration">
+        <div class="registration-dialog">
+            <div class="registration-content">
+                <div class="registration-header">
+                    <h4 class="registration-title">Регистрация</h4>
+                    <a href="#close" title="Close" class="close"><img class="close-img" src="img/cancel.svg" alt="Close"></a>
+                </div>
+                <div class="registration-body">
+                    <form class="form-registration">
+                        <input type="text" placeholder="Ваше Имя">
+                        <input type="text" placeholder="Ваше Фамилия">
+                        <input type="text" placeholder="Ваше Отчество">
+                        <div class="field-date">
+                            <label for="bday">Дата рождения:</label>
+                            <input type="date" id="bday" required>
+                        </div>
+                        <input type="password" placeholder="Введите Ваш пароль">
+                        <input type="password" placeholder="Повторите Ваш пароль">
+                        <input type="email" placeholder="Введите Ваш E-mail">
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Registration window -->
+
+    <!-- Our-salon window -->
+    <div id="openSalon" class="salon-window">
+        <div class="salon-dialog">
+            <div class="salon-content">
+                <div class="salon-header">
+                    <h4 class="salon-title">Наши салоны</h4>
+                    <a href="#close" title="Close" class="close"><img class="close-img" loading="lazy" src="img/cancel.svg" alt="Close"></a>
+                </div>
+                <div class="salon-body">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/maps/213/moscow/house/ulitsa_vozdvizhenka_9/Z04YcAdkTkAEQFtvfXt0c3lqZg==/?ll=37.635017%2C55.743557&utm_medium=mapframe&utm_source=maps&z=12.54" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Воздвиженка, 9 — Яндекс.Карты</a><iframe title="Yandex Map" src="https://yandex.by/map-widget/v1/-/CCUaYDqXsB" loading="lazy" width="560" height="400" style="position:relative;"></iframe></div>
+                </div>
+                <div class="salon-footer">
+                    <p class="salon-footer-header">Адрес нашего салона: </p>
+                    <address>
+                        г. Москва, улица Воздвиженка, 9.
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Our-salon window -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
